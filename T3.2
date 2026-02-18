@@ -1,0 +1,19 @@
+'use client'
+
+import { useRouter } from 'next/navigation'
+
+export default function Page() {
+  const router = useRouter()
+
+  return (
+    <>
+      <button onClick={() => router.push('/dashboard')}>
+        Navigate with push
+      </button>
+
+      <button onClick={() => router.replace('/dashboard')}>
+        Navigate with replace
+      </button>
+    </>
+  )
+}

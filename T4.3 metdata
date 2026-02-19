@@ -1,0 +1,12 @@
+export const metadata = {
+  title: 'My Page Title',
+  description: 'My page description',
+}
+
+export default function Page() {
+  return (
+    <div>
+      Page content...
+    </div>
+  )
+}

@@ -1,0 +1,9 @@
+// app/dashboard/layout.js
+export default function DashboardLayout({ children }) {
+  return (
+    <section>
+      <h2>Dashboard Section</h2>
+      {children}
+    </section>
+  )
+}

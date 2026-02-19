@@ -1,0 +1,33 @@
+// app/layout.js
+export default function MainLayout({ children }) {
+  return (
+    <html lang="en">
+      <body className="min-h-screen bg-gray-100">
+        <div className="flex min-h-screen">
+          
+          {/* Sidebar */}
+          <aside className="w-64 bg-gray-900 text-white p-6 shadow-lg">
+            <h2 className="text-2xl font-bold mb-8 border-b border-gray-700 pb-3">
+              Sidebar
+            </h2>
+
+            <nav className="space-y-3">
+              <a className="block px-3 py-2 rounded-lg hover:bg-gray-800 transition duration-200 cursor-pointer">
+                Dashboard
+              </a>
+              
+            </nav>
+          </aside>
+
+          {/* Main Content */}
+          <main className="flex-1 p-10">
+            <div className="bg-white rounded-2xl shadow-md p-8 min-h-full">
+              {children}
+            </div>
+          </main>
+
+        </div>
+      </body>
+    </html>
+  )
+}
